@@ -1,0 +1,25 @@
+.hp-cateadmin {
+	margin-top: 30px;
+}
+
+.hp-catebox {
+	height: 453px;
+}
+
+#pagination {
+	position: absolute;
+	bottom: 40px;
+	right: 240px;
+}
+
+.hp-btncate1 {
+	position: absolute;
+	bottom: 40px;
+	left: 30px;
+}
+
+.hp-btncate2 {
+	position: absolute;
+	bottom: 40px;
+	right: 30px;
+}

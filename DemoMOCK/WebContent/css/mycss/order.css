@@ -1,0 +1,33 @@
+.hp-cartmargin {
+	margin-top: 40px;
+}
+
+.hp-cartmargin:hover {
+	background-color: #eeeeee;
+}
+.step1 {
+	margin-top: 40px;
+	height: 800px;
+}
+.step3 {
+	margin-top: 70px;
+	height: 800px;
+}
+.fa-cc-visa{
+	margin-right: 10px;
+	color: #2196f3;
+}
+.fa-cc-mastercard{
+	margin-right: 10px;
+	color: #ff9800;
+}
+.fa-cc-jcb{
+	color: #64dd17;
+}
+.step2 {
+	margin-top: 40px;
+}
+
+.hp-hoverlistorder:hover {
+	background-color: #eeeeee;
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+  <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;DatabaseName=InternShop;</property>
+  <property name="hibernate.connection.username">sa</property>
+  <property name="connection.password">hp22011997</property>
+  <property name="connection.pool_size">5</property>
+  <property name="show_sql">false</property>
+  <property name="hbm2ddl.auto">none</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+  <!-- Mapping files -->
+  <mapping class="com.fsoft.model.Customer"/>
+  <mapping class="com.fsoft.model.Category"/>
+  <mapping class="com.fsoft.model.Product"/>
+  <mapping class="com.fsoft.model.Order"/>
+   <mapping class="com.fsoft.model.Supplier"/> 
+   <mapping class="com.fsoft.model.OrderDetail"/>
+  <mapping class="com.fsoft.model.OrderStatus"/>
+   <mapping class="com.fsoft.model.Review"/>
+  <mapping class="com.fsoft.model.TechnicalParam"/>
+   
+ </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,161 @@
+
+/* Phần cho đánh giá bằng sao */
+.hp-rating {
+	cursor: pointer;
+	height: 5px;
+	width: 5px;
+	margin-left: 13px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.hp-rating input {
+	display: inline-block;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.span1,.span2,.span3,.span4,.span5 {
+	top: 0px;
+	left: 0px;
+	height: 5px;
+	width: 5px;
+}
+
+/* Phần cho relatedproduct */
+.hp-relatedproduct-body {
+	height: 220px;
+}
+
+.hp-relatedproduct-name {
+	height: 40px;
+}
+
+/* phần css chọn màu cho sản phẩm */
+.hp-color {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 50px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.hp-color input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#iconcolor {
+	top:0px;
+	left: 0px;
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	border-radius: 50px;
+}
+
+.hp-color input:checked ~ #iconcolor {
+	border: 1px solid black;
+}
+
+#iconcolor:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.hp-color input:checked ~ .iconcolor:after {
+	display: block;
+}
+/* Phần css tab  */
+button:focus, input:focus, textarea:focus, select:focus {
+	outline: none;
+}
+
+.tabs {
+	display: block;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.tabs [class^="tab"] label, .tabs [class*=" tab"] label {
+	cursor: pointer;
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.tabs [class^="tab"] [type="radio"], .tabs [class*=" tab"] [type="radio"]
+	{
+	border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: block;
+	width: 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
+	.tabs [class*=" tab"] [type="radio"]:hover, .tabs [class*=" tab"] [type="radio"]:focus
+	{
+	border-bottom: 1px solid black;
+}
+
+.tabs [class^="tab"] [type="radio"]:checked, .tabs [class*=" tab"] [type="radio"]:checked
+	{
+	border-bottom: 2px solid black;
+}
+
+.tabs [class^="tab"] [type="radio"]:checked+div, .tabs [class*=" tab"] [type="radio"]:checked+div
+	{
+	opacity: 1;
+}
+
+.tabs [class^="tab"] [type="radio"]+div, .tabs [class*=" tab"] [type="radio"]+div
+	{
+	display: block;
+	opacity: 0;
+	padding: 2rem 0;
+	width: 90%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.tabs .tab-2 {
+	width: 50%;
+}
+
+.tabs .tab-2 [type="radio"]+div {
+	width: 200%;
+	margin-left: 200%;
+}
+
+.tabs .tab-2 [type="radio"]:checked+div {
+	margin-left: 0;
+}
+
+.tabs .tab-2:last-child [type="radio"]+div {
+	margin-left: 100%;
+}
+
+.tabs .tab-2:last-child [type="radio"]:checked+div {
+	margin-left: -100%;
+}

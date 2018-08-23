@@ -1,0 +1,26 @@
+#nt-registerform label.error {
+	width: auto;
+	display: block;
+	display: inline;
+	color: red;
+}
+
+#nt-loginform label.error {
+	width: auto;
+	display: inline;
+	margin-top: 50px;
+	color: red;
+}
+
+#nt-loginerror {
+	color: red;
+	width: auto;
+	text-align: center;
+}
+
+#nt-registererror {
+	color: red;
+	width: auto;
+	text-align: center;
+}
+

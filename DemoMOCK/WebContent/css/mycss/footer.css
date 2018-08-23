@@ -1,0 +1,16 @@
+
+.hp-footer p {
+	font-size: 14px;
+	color: #bdbdbd;
+}
+.hp-footer p:hover{
+	color: black;
+}
+.hp-footer p>a {
+	text-decoration: none;
+	color: #bdbdbd;
+}
+.hp-footer p>a:hover {
+	margin-left: 16px;
+	color: black;
+}

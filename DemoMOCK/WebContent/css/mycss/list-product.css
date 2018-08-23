@@ -1,0 +1,82 @@
+ #pagination {
+	display: flex;
+             display: -webkit-flex;
+             flex-wrap: wrap;
+             -webkit-flex-wrap: wrap; 
+             justify-content: center;
+             -webkit-justify-content: center;
+} 
+         
+*{
+  box-sizing: border-box;
+}
+
+#dml-myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  max-height: 208px; 
+  overflow: auto
+}
+
+#dml-myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block
+}
+
+#dml-myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+.dml-popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.dml-popup .dml-popuptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    margin: 0 auto;
+}
+
+/* Toggle this class - hide and show the popup */
+.dml-popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.dml-inputmid{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.dml-inputmid input{
+	width: 300px;
+	margin: 0 auto;
+}
+
+#dmmid{
+	width: 300px;
+	margin: 0 auto;
+	display: block;
+}

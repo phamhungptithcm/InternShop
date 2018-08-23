@@ -1,0 +1,22 @@
+.hp-supadmin {
+	margin-top: 30px;
+}
+.hp-supbox {
+	height: 453px;
+	position: relative;
+}
+#pagination{
+	position: absolute;
+	bottom: 40px;
+	right: 240px;
+}
+.hp-btnsup1{
+	position: absolute;
+	bottom: 40px;
+	left: 30px;
+}
+.hp-btnsup2{
+	position: absolute;
+	bottom: 40px;
+	right: 30px;
+}
